@@ -1,0 +1,16 @@
+<p>navigation works!</p>
+<button (click)="navigateTo()">nav</button>
+<div appAppRead>init</div>
+<div class="header-container">
+    <button (click)="countStoreNav()">count</button>
+    <div>Counter: {{ countNavigate$ | async | number:'1.2-2'}}</div>
+    <button (click)="getStoreNav()">get</button>
+    <div>All navBar: {{ allNavigates$ | async  }}</div>
+</div>
+<div *ngIf="display"
+[@enterLeaveTri]>animate label 
+    <div class="enter_1_cls">cls1</div>
+    <div class="enter_2_cls">cls2</div>
+</div>
+<button (click)="display=!display">Animate</button>
+

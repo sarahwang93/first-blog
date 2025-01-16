@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>FirstBlog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles-5INURTSO.css"><link rel="modulepreload" href="chunk-APXS6GTX.js"><style ng-app-id="ng">ul[_ngcontent-ng-c4119134646]{list-style-type:none}</style><style ng-app-id="ng">[_nghost-ng-c4119134646] {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1[_ngcontent-ng-c4119134646], h2[_ngcontent-ng-c4119134646], h3[_ngcontent-ng-c4119134646], h4[_ngcontent-ng-c4119134646], h5[_ngcontent-ng-c4119134646], h6[_ngcontent-ng-c4119134646] {
+    margin: 8px 0;
+  }
+
+  p[_ngcontent-ng-c4119134646] {
+    margin: 0;
+  }
+
+  .spacer[_ngcontent-ng-c4119134646] {
+    flex: 1;
+  }
+
+  .toolbar[_ngcontent-ng-c4119134646] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar[_ngcontent-ng-c4119134646]   img[_ngcontent-ng-c4119134646] {
+    margin: 0 16px;
+  }
+
+  .toolbar[_ngcontent-ng-c4119134646]   #twitter-logo[_ngcontent-ng-c4119134646] {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar[_ngcontent-ng-c4119134646]   #twitter-logo[_ngcontent-ng-c4119134646]:hover {
+    opacity: 0.8;
+  }
+
+  .content[_ngcontent-ng-c4119134646] {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons[_ngcontent-ng-c4119134646] {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons[_ngcontent-ng-c4119134646]:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card[_ngcontent-ng-c4119134646]   svg.material-icons[_ngcontent-ng-c4119134646]   path[_ngcontent-ng-c4119134646] {
+    fill: #888;
+  }
+
+  .card-container[_ngcontent-ng-c4119134646] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card[_ngcontent-ng-c4119134646] {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container[_ngcontent-ng-c4119134646]   .card[_ngcontent-ng-c4119134646]:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small[_ngcontent-ng-c4119134646] {
+    height: 16px;
+    width: 168px;
+  }
+
+  .card-container[_ngcontent-ng-c4119134646]   .card[_ngcontent-ng-c4119134646]:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container[_ngcontent-ng-c4119134646]   .card[_ngcontent-ng-c4119134646]:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-container[_ngcontent-ng-c4119134646]   .card[_ngcontent-ng-c4119134646]:not(.highlight-card):hover   .material-icons[_ngcontent-ng-c4119134646]   path[_ngcontent-ng-c4119134646] {
+    fill: rgb(105, 103, 103);
+  }
+
+  .card.highlight-card[_ngcontent-ng-c4119134646] {
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: auto;
+    min-width: 30%;
+    position: relative;
+  }
+
+  .card.card.highlight-card[_ngcontent-ng-c4119134646]   span[_ngcontent-ng-c4119134646] {
+    margin-left: 60px;
+  }
+
+  svg#rocket[_ngcontent-ng-c4119134646] {
+    width: 80px;
+    position: absolute;
+    left: -10px;
+    top: -24px;
+  }
+
+  svg#rocket-smoke[_ngcontent-ng-c4119134646] {
+    height: calc(100vh - 95px);
+    position: absolute;
+    top: 10px;
+    right: 180px;
+    z-index: -10;
+  }
+
+  a[_ngcontent-ng-c4119134646], a[_ngcontent-ng-c4119134646]:visited, a[_ngcontent-ng-c4119134646]:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a[_ngcontent-ng-c4119134646]:hover {
+    color: #125699;
+  }
+
+  .terminal[_ngcontent-ng-c4119134646] {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+  }
+
+  .terminal[_ngcontent-ng-c4119134646]::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+  }
+
+  .terminal[_ngcontent-ng-c4119134646]   pre[_ngcontent-ng-c4119134646] {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    color: white;
+    padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  .circle-link[_ngcontent-ng-c4119134646] {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin: 8px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 1s ease-out;
+  }
+
+  .circle-link[_ngcontent-ng-c4119134646]:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  footer[_ngcontent-ng-c4119134646] {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer[_ngcontent-ng-c4119134646]   a[_ngcontent-ng-c4119134646] {
+    display: flex;
+    align-items: center;
+  }
+
+  .github-star-badge[_ngcontent-ng-c4119134646] {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  }
+
+  .github-star-badge[_ngcontent-ng-c4119134646]:hover {
+    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+    border-color: rgba(27,31,35,.35);
+    background-position: -.5em;
+  }
+
+  .github-star-badge[_ngcontent-ng-c4119134646]   .material-icons[_ngcontent-ng-c4119134646] {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  svg#clouds[_ngcontent-ng-c4119134646] {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+
+  
+
+  @media screen and (max-width: 767px) {
+
+    .card-container[_ngcontent-ng-c4119134646]    > *[_ngcontent-ng-c4119134646]:not(.circle-link), .terminal[_ngcontent-ng-c4119134646] {
+      width: 100%;
+    }
+
+    .card[_ngcontent-ng-c4119134646]:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card[_ngcontent-ng-c4119134646]   span[_ngcontent-ng-c4119134646] {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke[_ngcontent-ng-c4119134646] {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke[_ngcontent-ng-c4119134646] {
+      display: none;
+      visibility: hidden;
+    }
+  }</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c4119134646 ng-version="17.3.3" ngh="1" ng-server-context="ssg"><link _ngcontent-ng-c4119134646 rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><div _ngcontent-ng-c4119134646 role="banner" class="toolbar"><div _ngcontent-ng-c4119134646 class="container" style="margin-left: 10px; font-weight: bold;"> Post Blog in Canadian Style </div><div _ngcontent-ng-c4119134646 style="margin-top: -5px;"></div></div><div _ngcontent-ng-c4119134646 style="text-align: center; margin-top: 60px;"><h1 _ngcontent-ng-c4119134646 direction style="font-size: medium;"> Welcome to angular-post-blog!</h1></div><div _ngcontent-ng-c4119134646><nav _ngcontent-ng-c4119134646 class="margin-left: 5040px"><a _ngcontent-ng-c4119134646 mat-button routerlink="details" routerlinkactive="active" class="nav-link" href="/details">Details</a> &nbsp; <a _ngcontent-ng-c4119134646 mat-button routerlink="contact" routerlinkactive="active" class="nav-link" href="/contact">Contact</a> &nbsp; <a _ngcontent-ng-c4119134646 routerlink="about" routerlinkactive="active" class="nav-link active" href="/about">About</a> &nbsp; <a _ngcontent-ng-c4119134646 routerlink="enterprise" routerlinkactive="active" class="nav-link" href="/enterprise">Enterprise</a> &nbsp; <a _ngcontent-ng-c4119134646 routerlink="register" routerlinkactive="active" class="nav-link" href="/register">Register</a> &nbsp; <a _ngcontent-ng-c4119134646 routerlink="button" routerlinkactive="active" class="nav-link" href="/button">Button</a></nav><router-outlet _ngcontent-ng-c4119134646></router-outlet><app-about _nghost-ng-c3763338548 ngh="0"><p _ngcontent-ng-c3763338548 class="margin-bottom:1040px">About Page</p><p _ngcontent-ng-c3763338548 style="font-weight: bold;">Hello there</p></app-about><!----></div><div _ngcontent-ng-c4119134646 hasrole>visible only for super admin user</div><button _ngcontent-ng-c4119134646 class="login-button btn btn-primary"> Google login </button><!----><!----><br _ngcontent-ng-c4119134646><button _ngcontent-ng-c4119134646 class="btn btn-outline-primary">Increment Counter
+</button><div _ngcontent-ng-c4119134646>You have visited 0 times.</div></app-root>
+<script src="polyfills-RT5I6R6G.js" type="module"></script><script src="scripts-EEEIPNC3.js" defer></script><script src="main-UCWHJ5D7.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"27":[{"i":"c3763338548","r":1}],"30":[{"i":"t1","r":1}],"31":[]},"t":{"30":"t0","31":"t1"}}]}</script></body></html>

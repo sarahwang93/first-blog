@@ -1,0 +1,14 @@
+<p>product works!</p>
+<button (click)="fetchProduct()">get_product</button>
+<button (click)="addProduct()">add_product</button>
+<button (click)="listenToStart()">listener</button>
+<div class="box-container" #toggle>
+    <button (click)="toggleState()">trigger state</button>
+    <div #listener
+    [@imgAnimationTrigger]="statetransfer"
+    (@imgAnimationTrigger.start)="captureStartEvent($event)"
+    (@imgAnimationTrigger.done)="captureDoneEvent($event)">
+    state transfer
+        <h1 class="content">cont</h1>
+    <div>
+</div>

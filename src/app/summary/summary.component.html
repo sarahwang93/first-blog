@@ -1,0 +1,24 @@
+<p>summary works!</p>
+<div class="header-container">
+    <div>Counter: {{ countProduct$ | async }}</div>
+    <div>Price: {{ totalPrice$ | async | number:'1.2-2' }}</div>
+</div>
+
+<button (click)="onBoxClick()">trigger</button>
+<button (click)="getElementInfo()">message</button>
+{{ isSpinning ? "Disable" : "Enable"}}
+
+<div class="box-container">
+  <div class="box" #ani></div>
+</div>
+<div [@.disabled]="isSpinning" class="box-container">
+  <div class="box"></div>
+</div>
+
+<div 
+[@openClose]="initState"
+#ana>test</div>
+
+
+
+

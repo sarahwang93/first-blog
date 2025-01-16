@@ -1,0 +1,10 @@
+<app-card>
+  <article>
+      <h2>{{ task.title}}</h2>
+      <h2>{{ task.userId }}</h2>
+      <h2>{{ task.summary }}</h2>
+      <p>
+        <button (click)="onCompleteTask(task.id)">Complete</button>
+      </p>
+  </article>
+</app-card>

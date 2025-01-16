@@ -1,0 +1,81 @@
+.box-container {
+    display: grid;
+    justify-items: center;
+  }
+  
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(123, 231, 177);
+    border-radius: 5px;
+  
+
+    animation-name: move;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  }
+
+  .box1 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(215, 68, 112);
+    border-radius: 5px;
+  
+    animation-name: move1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  }
+
+
+  .boxspin {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+    &.spin {
+      animation: move1 1s infinite;
+    }
+  }
+ 
+  
+  @keyframes move {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(100px, 0);
+    }
+    51% {
+      transform: translate(100px, 0) rotate(360deg);
+    }
+    80% {
+      transform: translate(100px, 0) rotate(0deg);
+    }
+  }
+
+  @keyframes move1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(100px, 0);
+    }
+    51% {
+      transform: translate(100px, 0) rotate(120deg);
+    }
+    80% {
+      transform: translate(100px, 0) rotate(20deg);
+    }
+  }

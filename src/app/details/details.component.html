@@ -1,0 +1,40 @@
+<p class='margin-bottom:1040px'>Details Page!</p>
+
+<form class="search-form" (ngSubmit)="onSubmit()">
+  <p><label for="searchBox">Search</label></p>
+  <input type="text" id="searchBox" placeholder="Search...." name="searchField" ngDefaultControl [(ngModel)]="searchField" />
+  <p><button type="submit">Submit</button></p>
+</form>
+
+<div class="col-3">
+  <div class="card">
+    <input type="number" name="activeImg" ngDefaultControl [(ngModel)]="activeImg">
+    <img [src]="images[activeImg].url" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{ images[activeImg].title }}</h5>
+      <ng-container [ngSwitch]="images[activeImg].downloadable">
+        <p class="card-text" *ngSwitchCase="1">
+          Downloadable
+          <a [href]="images[activeImg].url">{{ images[activeImg].url }}</a>
+        </p>
+        <p class="card-text" *ngSwitchCase="2">Purchasable</p>
+        <p class="card-text" *ngSwitchDefault>Not Downloadable</p>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<button ngDefaultControl [(ngModel)]=value (click)="onchange()">change</button>
+
+<ul>
+  <!-- seperate both premium and regular item-->
+    <div *ngFor="let component of components; let premium = premium; let regular = regular;"
+    [ngClass]="{premium: premium, regular: regular}">
+      <span>{{ component.id }} </span> 
+      <span>{{ component.premium ? 'Premium' : 'Standard' }}</span>
+    </div>
+</ul>
+
+<p>{{ message }}</p>
+<button (click)="getNewMessage()">ReceiveMessage</button>
+

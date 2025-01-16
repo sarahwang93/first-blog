@@ -1,0 +1,7 @@
+<p>Not found page</p>
+<p *ngIf="userA.name; else signIn">Hello {{ userA.name}}</p>
+    <li *ngIf="userA.name">
+        name: {{ userA.name }} <br>
+        premium: {{ userA.premium ? 'Yes':'No'}}
+    </li>
+<ng-template #signIn>No Logged In</ng-template>

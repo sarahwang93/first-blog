@@ -1,0 +1,20 @@
+{
+  "routes": [
+    "/about",
+    "/button",
+    "/childshare",
+    "/contact",
+    "/details",
+    "/enterprise",
+    "/enterprise/subenterprise",
+    "/enterprise/subenterprise/nestedenterprise",
+    "/home",
+    "/home/modal",
+    "/home/problem",
+    "/login",
+    "/navigate",
+    "/problem",
+    "/records",
+    "/register"
+  ]
+}

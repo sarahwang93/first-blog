@@ -1,0 +1,18 @@
+<p>register works!</p>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <p class="form-group">
+    <label class="form-group">Email: </label>
+    <input type="email" class="form-control" pattern=".+@.+\..+"  formControlName="email" required>
+    <br>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </p>
+    <label class="form-group">Name: </label>
+    <input type="text" class="form-control"  formControlName="name" required>
+    <br>
+    <label class="form-group">Agreement: </label>
+    <input class="form-check-input" type="checkbox" formControlName="agreement">
+    <hr>
+    <button class="button" type="submit">Save</button>
+</form>
+<img src="../../assets/flower.jpeg" direction>

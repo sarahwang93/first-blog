@@ -1,0 +1,60 @@
+<div class="card mt-3">
+    <form [formGroup]="buttonForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+        <div class="col-md-6 mb-3">
+          <label>Name</label>
+          <input type="text" class="form-control" formControlName="name" [ngClass]="{ 'is-invalid': buttonForm.get('name').errors }">
+          <ng-container *ngIf="buttonForm.get('name').errors && buttonForm.get('name')?.touched">
+            <div *ngIf="buttonForm.get('name').errors.required" class="invalid-feedback">
+              Please fill in the field.
+            </div>
+          </ng-container>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>Number</label>
+          <input type="text" class="form-control" formControlName="number">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label>Expiration</label>
+            <input type="text" class="form-control" formControlName="expiration">
+          </div>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit" [disabled]="buttonForm.invalid">Validate</button>
+    </form>
+    
+    <div>Values: {{ buttonForm.value | pretty }}</div>
+    <div>Valid: {{ buttonForm.valid }}</div>
+</div>
+
+
+<input [(ngModel)]="searchText" type="text" class="form-control" placeholder="Search Text" aria-label="Username" aria-describedby="basic-addon1">
+<div class="card-title" showHide>test</div>
+<ng-container #appShowHideElse></ng-container>
+<ng-template #appShowHide let-name="name" let-data="data">
+  <div>{{ name }}</div>
+  <div>{{ data }}</div>
+</ng-template>
+
+
+<div>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!buttonForm.valid">Create</button>
+</div>
+
+<!------
+<p>Default:</p>
+<app-button></app-button>
+<hr>
+
+<p>Warn:</p>
+<app-button [warn]="true"></app-button>
+<hr>
+
+<p>Primary:</p>
+<app-button [color]="'primary'"></app-button>
+<hr>
+
+<p>Secondary:</p>
+<app-button [color]="'secondary'"></app-button>
+<hr> ----->
+
+ 

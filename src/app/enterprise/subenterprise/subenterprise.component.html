@@ -1,0 +1,30 @@
+<p>subenterprise works!</p>
+<div>
+  <router-outlet></router-outlet>
+</div>    
+
+<div class="card mt-3">
+    <div class="card-body">
+      <form class="input-group" (submit)="onSubmit($event)">
+        <input type="text" class="form-control" (input)="query = $event.target.value">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Button</button>
+          <button class="btn btn-primary" (click)="search(query)">Search</button>
+        </div>
+      </form>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Drink</th>
+          <th>Instructions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let drink of drinks">
+          <td>{{ drink.strDrink }}</td>
+          <td>{{ drink.strInstructions }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

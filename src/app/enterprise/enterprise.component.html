@@ -1,0 +1,17 @@
+<p>enterprise works!!</p>
+
+<div *ngIf="isLoading">
+    <p>Email: {{ info.email }}</p>
+    <p>Name: {{ info.gender }}</p>
+</div>
+
+<div>  
+    <a [routerLink]="['./subenterprise']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        submodule
+    </a>
+    <router-outlet></router-outlet>
+</div>
+<!-- test message sending
+<app-sales-record (a)="receiveMessageFromSales($event)">enterprise emits
+</app-sales-record> -->
+

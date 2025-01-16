@@ -1,0 +1,12 @@
+&.premium {
+    background-color: aquamarine;
+}
+
+&.regular {
+    background-color: burlywood;
+}
+
+&.active {
+    background-color: gold;
+}
+
